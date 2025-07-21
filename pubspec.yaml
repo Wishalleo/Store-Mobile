@@ -16,8 +16,10 @@ dependencies:
   http: ^1.4.0
   iconsax: ^0.0.8
   intl: ^0.20.2
+  smooth_page_indicator: ^1.2.1
 
 dev_dependencies:
+  flutter_gen_runner: ^5.11.0
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
@@ -26,7 +28,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
+    - assets/images/on_boarding_images/
     - assets/icons/
     - assets/fonts/
     - assets/logos/

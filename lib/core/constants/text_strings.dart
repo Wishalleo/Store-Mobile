@@ -2,11 +2,11 @@ class WTexts {
   // Teks Global
 
   // Teks OnBoarding
-  static const String onBoardingTitlel = "Pilih produkmu";
+  static const String onBoardingTitle1 = "Pilih produkmu";
   static const String onBoardingTitle2 = "Pilih metode pembayaran";
   static const String onBoardingTitle3 = "Antar sampai ke depan pintu";
 
-  static const String onBoardingSubTitlel =
+  static const String onBoardingSubTitle1 =
       "Selamat datang di dunia pilihan tanpa batas, produk sempurna menantimu!";
   static const String onBoardingSubTitle2 =
       "Untuk transaksi yang lancar, pilih metode pembayaranmu — kenyamananmu adalah prioritas kami!";
