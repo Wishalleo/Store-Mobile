@@ -1,8 +1,8 @@
 import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:cashier_store/features/authentication/screens/login/widgets/login_form.dart';
-import 'package:cashier_store/features/authentication/screens/login/widgets/login_form_divider.dart';
+import 'package:cashier_store/common/widgets/login_signup/form_divider.dart';
 import 'package:cashier_store/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:cashier_store/features/authentication/screens/login/widgets/login_social_button.dart';
+import 'package:cashier_store/common/widgets/login_signup/social_button.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -23,9 +23,9 @@ class LoginScreen extends StatelessWidget {
             children: [
               LoginHeader(),
               LoginForm(),
-              LoginFormDivider(),
+              FormDivider(),
               SizedBox(height: WSizes.spaceBtwSections),
-              LoginSocialButton(),
+              SocialButton(),
             ],
           ),
         ),

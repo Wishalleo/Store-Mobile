@@ -1,6 +1,6 @@
+import 'package:cashier_store/core/assets/assets.gen.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:cashier_store/core/constants/text_strings.dart';
-import 'package:cashier_store/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 class LoginHeader extends StatelessWidget {

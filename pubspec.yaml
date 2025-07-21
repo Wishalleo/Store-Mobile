@@ -24,6 +24,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+flutter_gen:
+  output: lib/core/assets/
+  
 flutter:
   uses-material-design: true
 

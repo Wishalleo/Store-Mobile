@@ -1,10 +1,10 @@
+import 'package:cashier_store/core/assets/assets.gen.dart';
 import 'package:cashier_store/core/constants/text_strings.dart';
 import 'package:cashier_store/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:cashier_store/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:cashier_store/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:cashier_store/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:cashier_store/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:cashier_store/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

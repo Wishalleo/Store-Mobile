@@ -1,8 +1,8 @@
 import 'package:cashier_store/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class LoginFormDivider extends StatelessWidget {
-  const LoginFormDivider({super.key});
+class FormDivider extends StatelessWidget {
+  const FormDivider({super.key});
 
   @override
   Widget build(BuildContext context) {
