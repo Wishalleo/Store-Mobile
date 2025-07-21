@@ -1,5 +1,7 @@
 import 'package:cashier_store/core/constants/sizes.dart';
+import 'package:cashier_store/features/authentication/screens/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginForm extends StatelessWidget {
@@ -22,7 +24,7 @@ class LoginForm extends StatelessWidget {
             TextFormField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
-                label: Text('Password'),
+                label: Text('Kata sandi'),
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
@@ -36,7 +38,7 @@ class LoginForm extends StatelessWidget {
                     Text('Ingat aku'),
                   ],
                 ),
-                TextButton(onPressed: () {}, child: Text('Lupa Password?')),
+                TextButton(onPressed: () {}, child: Text('Lupa Kata Sandi?')),
               ],
             ),
             SizedBox(height: WSizes.spaceBtwSections),
@@ -48,7 +50,9 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(SignupScreen());
+                },
                 child: Text('Daftar akun'),
               ),
             ),

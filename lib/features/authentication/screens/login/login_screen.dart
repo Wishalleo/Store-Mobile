@@ -23,7 +23,7 @@ class LoginScreen extends StatelessWidget {
             children: [
               LoginHeader(),
               LoginForm(),
-              FormDivider(),
+              FormDivider(title: 'Atau Masuk Dengan'),
               SizedBox(height: WSizes.spaceBtwSections),
               SocialButton(),
             ],

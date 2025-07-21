@@ -2,8 +2,8 @@ import 'package:cashier_store/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class FormDivider extends StatelessWidget {
-  const FormDivider({super.key});
-
+  const FormDivider({super.key, required this.title});
+  final String title;
   @override
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
@@ -17,10 +17,7 @@ class FormDivider extends StatelessWidget {
             endIndent: 5,
           ),
         ),
-        Text(
-          'Atau Masuk Dengan',
-          style: Theme.of(context).textTheme.labelMedium,
-        ),
+        Text(title, style: Theme.of(context).textTheme.labelMedium),
         Flexible(
           child: Divider(
             color: dark ? WColors.darkGrey : WColors.grey,

@@ -1,6 +1,8 @@
+import 'package:cashier_store/core/theme/custom_themes/appbar_theme.dart';
 import 'package:cashier_store/core/theme/custom_themes/checkbox_theme.dart';
 import 'package:cashier_store/core/theme/custom_themes/elevated_button_theme.dart';
 import 'package:cashier_store/core/theme/custom_themes/outline_button_theme.dart';
+import 'package:cashier_store/core/theme/custom_themes/text_field_theme.dart';
 import 'package:cashier_store/core/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +18,8 @@ class WAppTheme {
     elevatedButtonTheme: WElevatedButtonTheme.lightElevatedButtonTheme,
     checkboxTheme: WCheckboxTheme.lightCheckBoxTheme,
     outlinedButtonTheme: WOutlineButtonTheme.lightOutlinedButtonThemeData,
+    inputDecorationTheme: WTextFieldTheme.lightInputDecorationTheme,
+    appBarTheme: WAppBarTheme.lightAppBarTheme,
   );
   static ThemeData darkThemeData = ThemeData(
     useMaterial3: true,
@@ -26,5 +30,7 @@ class WAppTheme {
     elevatedButtonTheme: WElevatedButtonTheme.darkElevatedButtonTheme,
     checkboxTheme: WCheckboxTheme.darkCheckBoxTheme,
     outlinedButtonTheme: WOutlineButtonTheme.darkOutlinedButtonThemeData,
+    inputDecorationTheme: WTextFieldTheme.darkInputDecorationTheme,
+    appBarTheme: WAppBarTheme.darkAppBarTheme,
   );
 }
