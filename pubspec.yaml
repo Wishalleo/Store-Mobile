@@ -8,6 +8,7 @@ environment:
   sdk: ^3.8.1
 
 dependencies:
+  cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.4.6
@@ -26,7 +27,7 @@ dev_dependencies:
 
 flutter_gen:
   output: lib/core/assets/
-  
+
 flutter:
   uses-material-design: true
 

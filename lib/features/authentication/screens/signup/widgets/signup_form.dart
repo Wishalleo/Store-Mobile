@@ -1,5 +1,7 @@
 import 'package:cashier_store/core/constants/sizes.dart';
+import 'package:cashier_store/features/authentication/screens/signup/verify_email.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignupForm extends StatelessWidget {
@@ -56,7 +58,12 @@ class SignupForm extends StatelessWidget {
           SizedBox(height: WSizes.spaceBtwSections),
           SizedBox(
             width: double.infinity,
-            child: ElevatedButton(onPressed: () {}, child: Text('Buat akun')),
+            child: ElevatedButton(
+              onPressed: () {
+                Get.to(VerifyEmail());
+              },
+              child: Text('Buat akun'),
+            ),
           ),
         ],
       ),

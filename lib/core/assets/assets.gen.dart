@@ -44,6 +44,11 @@ class $AssetsLogosGen {
 class $AssetsImagesOnBoardingImagesGen {
   const $AssetsImagesOnBoardingImagesGen();
 
+  /// File path: assets/images/on_boarding_images/pudgy-penguins-calm.gif
+  AssetGenImage get pudgyPenguinsCalm => const AssetGenImage(
+    'assets/images/on_boarding_images/pudgy-penguins-calm.gif',
+  );
+
   /// File path: assets/images/on_boarding_images/pudgy-penguins-cart.gif
   AssetGenImage get pudgyPenguinsCart => const AssetGenImage(
     'assets/images/on_boarding_images/pudgy-penguins-cart.gif',
@@ -59,11 +64,18 @@ class $AssetsImagesOnBoardingImagesGen {
     'assets/images/on_boarding_images/pudgy-penguins-delivery.gif',
   );
 
+  /// File path: assets/images/on_boarding_images/pudgy-penguins-yuppy.gif
+  AssetGenImage get pudgyPenguinsYuppy => const AssetGenImage(
+    'assets/images/on_boarding_images/pudgy-penguins-yuppy.gif',
+  );
+
   /// List of all assets
   List<AssetGenImage> get values => [
+    pudgyPenguinsCalm,
     pudgyPenguinsCart,
     pudgyPenguinsCoin,
     pudgyPenguinsDelivery,
+    pudgyPenguinsYuppy,
   ];
 }
 

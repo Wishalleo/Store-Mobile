@@ -1,3 +1,4 @@
+import 'package:cashier_store/common/styles/spacing_styles.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:cashier_store/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:cashier_store/common/widgets/login_signup/form_divider.dart';
@@ -13,12 +14,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsetsGeometry.only(
-            top: WSizes.appBarHeight,
-            right: WSizes.defaultSpace,
-            left: WSizes.defaultSpace,
-            bottom: WSizes.defaultSpace,
-          ),
+          padding: WSpacingStyles.paddingWithAppBar,
           child: Column(
             children: [
               LoginHeader(),

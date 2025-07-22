@@ -1,9 +1,9 @@
 import 'package:cashier_store/common/widgets/login_signup/form_divider.dart';
 import 'package:cashier_store/common/widgets/login_signup/social_button.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
+import 'package:cashier_store/core/constants/text_strings.dart';
 import 'package:cashier_store/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -19,7 +19,7 @@ class SignupScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Ayo buat akun barumu',
+                WTexts.signupTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               SizedBox(height: WSizes.spaceBtwSections),
