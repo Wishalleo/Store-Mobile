@@ -1,4 +1,5 @@
 import 'package:cashier_store/core/constants/sizes.dart';
+import 'package:cashier_store/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:cashier_store/features/authentication/screens/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -38,7 +39,10 @@ class LoginForm extends StatelessWidget {
                     Text('Ingat aku'),
                   ],
                 ),
-                TextButton(onPressed: () {}, child: Text('Lupa Kata Sandi?')),
+                TextButton(
+                  onPressed: () => Get.to(ForgetPassword()),
+                  child: Text('Lupa Kata Sandi?'),
+                ),
               ],
             ),
             SizedBox(height: WSizes.spaceBtwSections),
