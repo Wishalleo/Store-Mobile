@@ -1,3 +1,4 @@
+import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -10,8 +11,8 @@ class WAppBarTheme {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.black, size: 24),
-    actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
+    iconTheme: IconThemeData(color: Colors.black, size: WSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: Colors.black, size: WSizes.iconMd),
     titleTextStyle: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w600,
@@ -27,8 +28,8 @@ class WAppBarTheme {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.white, size: 24),
-    actionsIconTheme: IconThemeData(color: Colors.white, size: 24),
+    iconTheme: IconThemeData(color: Colors.white, size: WSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: Colors.white, size: WSizes.iconMd),
     titleTextStyle: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w600,

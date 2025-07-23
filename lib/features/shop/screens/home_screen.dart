@@ -1,4 +1,5 @@
 import 'package:cashier_store/common/widgets/custom_shapes/container/primary_header_container.dart';
+import 'package:cashier_store/features/shop/screens/widgets/home_appbar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,7 +9,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(children: [PrimaryHeaderContainer(child: Container())]),
+        child: Column(
+          children: [
+            PrimaryHeaderContainer(child: Column(children: [HomeAppBar()])),
+          ],
+        ),
       ),
     );
   }

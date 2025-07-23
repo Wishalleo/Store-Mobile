@@ -35,5 +35,5 @@ class WTexts {
 
   // Home page
   static const String homeAppbarTitle = "Hari yang baik untuk berbelanja";
-  static const String homeAppbarSubTitle = "Wishalleo Schermeris";
+  static const String homeAppbarSubTitle = "Wishalleo";
 }
