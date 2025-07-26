@@ -7,7 +7,7 @@ class OnboardingController extends GetxController {
   // Variabel
   final pageController = PageController();
   RxInt currentPageIndex = 0.obs;
-  void updatePageIndicator(index) => currentPageIndex = index;
+  void updatePageIndicator(index) => currentPageIndex.value = index;
   void dotNavigatorClick(index) {
     currentPageIndex.value = index;
     pageController.jumpTo(index);
@@ -18,7 +18,7 @@ class OnboardingController extends GetxController {
       Get.offAll(const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
-      currentPageIndex.value = page;
+      // currentPageIndex.value = page;
       pageController.jumpToPage(page);
     }
   }
