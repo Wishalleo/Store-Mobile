@@ -4,6 +4,7 @@ import 'package:cashier_store/common/widgets/texts/section_heading.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:cashier_store/features/shop/screens/widgets/home_appbar.dart';
 import 'package:cashier_store/features/shop/screens/widgets/home_categories.dart';
+import 'package:cashier_store/features/shop/screens/widgets/promo_slider.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -39,6 +40,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(WSizes.defaultSpace),
+              child: PromoSlider(),
             ),
           ],
         ),

@@ -8,6 +8,7 @@ environment:
   sdk: ^3.8.1
 
 dependencies:
+  carousel_slider: ^5.1.1
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
@@ -33,6 +34,7 @@ flutter:
 
   assets:
     - assets/images/on_boarding_images/
+    - assets/images/carousel/
     - assets/icons/
     - assets/fonts/
     - assets/logos/

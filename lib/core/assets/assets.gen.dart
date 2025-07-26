@@ -14,6 +14,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// Directory path: assets/images/carousel
+  $AssetsImagesCarouselGen get carousel => const $AssetsImagesCarouselGen();
+
   /// Directory path: assets/images/on_boarding_images
   $AssetsImagesOnBoardingImagesGen get onBoardingImages =>
       const $AssetsImagesOnBoardingImagesGen();
@@ -39,6 +42,25 @@ class $AssetsLogosGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [facebook, google, wLogoBlack, wLogoWhite];
+}
+
+class $AssetsImagesCarouselGen {
+  const $AssetsImagesCarouselGen();
+
+  /// File path: assets/images/carousel/go-yoonjung-1.jpeg
+  AssetGenImage get goYoonjung1 =>
+      const AssetGenImage('assets/images/carousel/go-yoonjung-1.jpeg');
+
+  /// File path: assets/images/carousel/go-yoonjung-2.jpeg
+  AssetGenImage get goYoonjung2 =>
+      const AssetGenImage('assets/images/carousel/go-yoonjung-2.jpeg');
+
+  /// File path: assets/images/carousel/go-yoonjung-3.jpeg
+  AssetGenImage get goYoonjung3 =>
+      const AssetGenImage('assets/images/carousel/go-yoonjung-3.jpeg');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [goYoonjung1, goYoonjung2, goYoonjung3];
 }
 
 class $AssetsImagesOnBoardingImagesGen {

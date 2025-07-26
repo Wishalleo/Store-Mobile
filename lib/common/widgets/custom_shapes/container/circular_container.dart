@@ -1,5 +1,4 @@
-import 'package:cashier_store/core/constants/colors.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class CircularContainer extends StatelessWidget {
   const CircularContainer({
@@ -10,22 +9,26 @@ class CircularContainer extends StatelessWidget {
     this.padding = 0,
     this.child,
     required this.backgroundColor,
+    this.margin,
   });
   final double? height;
   final double? width;
   final double radius;
   final double padding;
+  final EdgeInsets? margin;
   final Widget? child;
   final Color backgroundColor;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
-      width: 400,
+      height: height,
+      width: width,
+      padding: EdgeInsets.all(padding),
+      margin: margin,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(400)),
-        color: WColors.textWhite.withOpacity(0.1),
+        color: backgroundColor,
       ),
       child: child,
     );
