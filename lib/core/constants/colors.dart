@@ -7,6 +7,7 @@ class WColors {
   static const Color primary = Color(0xFF4b68ff);
   static const Color secondary = Color(0xFFffe24b);
   static const Color accent = Color(0xFFb0c7ff);
+  static const Color tertiary = Color(0xFF3F51B5);
 
   // Gradient Colors
   static const Gradient linearGradient = LinearGradient(
@@ -27,7 +28,7 @@ class WColors {
 
   // Background Container Colors
   static const Color lightContainer = Color(0xFFf6f6f6);
-  static Color darkContainer = WColors.textWhite.withOpacity(0.1);
+  static Color darkContainer = WColors.textWhite.withOpacity(0.2);
 
   // Button Colors
   static const Color buttonPrimary = Color(0xFF4b68ff);

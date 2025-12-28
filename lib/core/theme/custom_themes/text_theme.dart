@@ -26,13 +26,13 @@ class WTextTheme {
       color: Colors.black,
     ),
     titleMedium: TextStyle().copyWith(
-      fontSize: 16,
-      fontWeight: FontWeight.w500,
+      fontSize: 14,
+      fontWeight: FontWeight.w600,
       color: Colors.black,
     ),
     titleSmall: TextStyle().copyWith(
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
+      fontSize: 12,
+      fontWeight: FontWeight.w600,
       color: Colors.black,
     ),
 
@@ -61,6 +61,11 @@ class WTextTheme {
       fontSize: 12,
       fontWeight: FontWeight.normal,
       color: Colors.black.withOpacity(0.5),
+    ),
+    labelSmall: TextStyle().copyWith(
+      fontSize: 12,
+      fontWeight: FontWeight.normal,
+      color: Colors.black.withOpacity(0.3),
     ),
   );
   static TextTheme darkTheme = TextTheme(
@@ -86,13 +91,13 @@ class WTextTheme {
       color: Colors.white,
     ),
     titleMedium: TextStyle().copyWith(
-      fontSize: 16,
-      fontWeight: FontWeight.w500,
+      fontSize: 14,
+      fontWeight: FontWeight.w600,
       color: Colors.white,
     ),
     titleSmall: TextStyle().copyWith(
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
+      fontSize: 12,
+      fontWeight: FontWeight.w600,
       color: Colors.white,
     ),
 
@@ -117,10 +122,16 @@ class WTextTheme {
       fontWeight: FontWeight.normal,
       color: Colors.white,
     ),
+
     labelMedium: TextStyle().copyWith(
       fontSize: 12,
       fontWeight: FontWeight.normal,
-      color: Colors.white,
+      color: Colors.white.withOpacity(0.5),
+    ),
+    labelSmall: TextStyle().copyWith(
+      fontSize: 12,
+      fontWeight: FontWeight.normal,
+      color: Colors.white.withOpacity(0.4),
     ),
   );
 }

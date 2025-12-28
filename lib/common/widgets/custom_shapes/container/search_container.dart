@@ -4,30 +4,38 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SearchContainer extends StatelessWidget {
-  const SearchContainer({super.key, required this.onTap});
+  const SearchContainer({
+    super.key,
+    required this.onTap,
+    required this.label,
+    this.showBorder = false,
+    this.borderColor = WColors.borderPrimary,
+  });
+
+  final String label;
+  final bool showBorder;
+  final Color borderColor;
   final VoidCallback onTap;
   @override
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
     return GestureDetector(
       onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: WSizes.defaultSpace),
-        child: Container(
-          // height: 50,
-          decoration: BoxDecoration(
-            color: dark ? WColors.black : WColors.white,
-            borderRadius: BorderRadius.all(Radius.circular(WSizes.md)),
-          ),
-          child: Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(WSizes.md),
-                child: Icon(Iconsax.search_normal),
-              ),
-              Text('Cari di Toko'),
-            ],
-          ),
+      child: Container(
+        // height: 50,
+        decoration: BoxDecoration(
+          color: dark ? WColors.black : WColors.white,
+          borderRadius: BorderRadius.all(Radius.circular(WSizes.md)),
+          border: showBorder ? Border.all(color: borderColor) : null,
+        ),
+        child: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(WSizes.md),
+              child: Icon(Iconsax.search_normal),
+            ),
+            Text(label),
+          ],
         ),
       ),
     );

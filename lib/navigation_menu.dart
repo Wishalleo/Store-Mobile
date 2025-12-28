@@ -1,4 +1,5 @@
 import 'package:cashier_store/core/constants/colors.dart';
+import 'package:cashier_store/features/report/screens/report_screen.dart';
 import 'package:cashier_store/features/shop/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,7 +15,7 @@ class NavigationMenu extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: Obx(() {
         return NavigationBar(
-          height: 80,
+          height: 60,
           elevation: 0,
           backgroundColor: dark ? WColors.black : WColors.white,
           indicatorColor: dark
@@ -27,12 +28,12 @@ class NavigationMenu extends StatelessWidget {
           destinations: [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Beranda'),
             NavigationDestination(
-              icon: Icon(Iconsax.note_1),
-              label: 'Aktivitas',
-            ),
-            NavigationDestination(
               icon: Icon(Iconsax.note_214),
               label: 'Laporan',
+            ),
+            NavigationDestination(
+              icon: Icon(Iconsax.note_1),
+              label: 'Aktivitas',
             ),
             NavigationDestination(
               icon: Icon(Iconsax.setting),
@@ -51,7 +52,7 @@ class NavigationController extends GetxController {
 
   List pageScreens = [
     HomeScreen(),
-    Container(color: Colors.red),
+    ReportScreen(),
     Container(color: Colors.black),
     Container(color: Colors.green),
   ];

@@ -35,6 +35,7 @@ flutter:
   assets:
     - assets/images/on_boarding_images/
     - assets/images/carousel/
+    - assets/images/products/
     - assets/icons/
     - assets/fonts/
     - assets/logos/

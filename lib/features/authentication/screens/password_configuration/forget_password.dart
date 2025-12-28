@@ -1,7 +1,6 @@
 import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:cashier_store/core/constants/text_strings.dart';
 import 'package:cashier_store/features/authentication/screens/password_configuration/reset_password.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

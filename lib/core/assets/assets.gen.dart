@@ -20,6 +20,9 @@ class $AssetsImagesGen {
   /// Directory path: assets/images/on_boarding_images
   $AssetsImagesOnBoardingImagesGen get onBoardingImages =>
       const $AssetsImagesOnBoardingImagesGen();
+
+  /// Directory path: assets/images/products
+  $AssetsImagesProductsGen get products => const $AssetsImagesProductsGen();
 }
 
 class $AssetsLogosGen {
@@ -47,20 +50,20 @@ class $AssetsLogosGen {
 class $AssetsImagesCarouselGen {
   const $AssetsImagesCarouselGen();
 
-  /// File path: assets/images/carousel/go-yoonjung-1.jpeg
-  AssetGenImage get goYoonjung1 =>
-      const AssetGenImage('assets/images/carousel/go-yoonjung-1.jpeg');
+  /// File path: assets/images/carousel/anime-girl.jpg
+  AssetGenImage get animeGirl =>
+      const AssetGenImage('assets/images/carousel/anime-girl.jpg');
 
-  /// File path: assets/images/carousel/go-yoonjung-2.jpeg
-  AssetGenImage get goYoonjung2 =>
-      const AssetGenImage('assets/images/carousel/go-yoonjung-2.jpeg');
+  /// File path: assets/images/carousel/bae-suzy.jpg
+  AssetGenImage get baeSuzy =>
+      const AssetGenImage('assets/images/carousel/bae-suzy.jpg');
 
-  /// File path: assets/images/carousel/go-yoonjung-3.jpeg
-  AssetGenImage get goYoonjung3 =>
-      const AssetGenImage('assets/images/carousel/go-yoonjung-3.jpeg');
+  /// File path: assets/images/carousel/go-yoonjung.jpeg
+  AssetGenImage get goYoonjung =>
+      const AssetGenImage('assets/images/carousel/go-yoonjung.jpeg');
 
   /// List of all assets
-  List<AssetGenImage> get values => [goYoonjung1, goYoonjung2, goYoonjung3];
+  List<AssetGenImage> get values => [animeGirl, baeSuzy, goYoonjung];
 }
 
 class $AssetsImagesOnBoardingImagesGen {
@@ -98,6 +101,44 @@ class $AssetsImagesOnBoardingImagesGen {
     pudgyPenguinsCoin,
     pudgyPenguinsDelivery,
     pudgyPenguinsYuppy,
+  ];
+}
+
+class $AssetsImagesProductsGen {
+  const $AssetsImagesProductsGen();
+
+  /// File path: assets/images/products/banana.png
+  AssetGenImage get banana =>
+      const AssetGenImage('assets/images/products/banana.png');
+
+  /// File path: assets/images/products/doritos.png
+  AssetGenImage get doritos =>
+      const AssetGenImage('assets/images/products/doritos.png');
+
+  /// File path: assets/images/products/ice-cream.png
+  AssetGenImage get iceCream =>
+      const AssetGenImage('assets/images/products/ice-cream.png');
+
+  /// File path: assets/images/products/lays.png
+  AssetGenImage get lays =>
+      const AssetGenImage('assets/images/products/lays.png');
+
+  /// File path: assets/images/products/redbull.png
+  AssetGenImage get redbull =>
+      const AssetGenImage('assets/images/products/redbull.png');
+
+  /// File path: assets/images/products/sprite.png
+  AssetGenImage get sprite =>
+      const AssetGenImage('assets/images/products/sprite.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    banana,
+    doritos,
+    iceCream,
+    lays,
+    redbull,
+    sprite,
   ];
 }
 
