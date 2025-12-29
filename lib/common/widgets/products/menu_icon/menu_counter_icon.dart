@@ -2,9 +2,10 @@ import 'package:cashier_store/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class CartCounterIcon extends StatelessWidget {
-  const CartCounterIcon({super.key, required this.onPressed});
+class CounterIcon extends StatelessWidget {
+  const CounterIcon({super.key, required this.onPressed, required this.icon});
   final VoidCallback onPressed;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class CartCounterIcon extends StatelessWidget {
       children: [
         IconButton(
           onPressed: onPressed,
-          icon: const Icon(Iconsax.shopping_bag, color: WColors.white),
+          icon: Icon(icon, color: WColors.white),
         ),
         Positioned(
           right: 0,

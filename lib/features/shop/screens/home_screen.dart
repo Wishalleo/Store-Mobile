@@ -1,11 +1,12 @@
 import 'package:cashier_store/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:cashier_store/common/widgets/custom_shapes/container/search_container.dart';
 import 'package:cashier_store/common/widgets/custom_shapes/container/toggle_switcher.dart';
-import 'package:cashier_store/common/widgets/products/cart/cart_menu_icon.dart';
+import 'package:cashier_store/common/widgets/products/menu_icon/menu_counter_icon.dart';
 import 'package:cashier_store/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:cashier_store/core/constants/colors.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -36,7 +37,10 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        CartCounterIcon(onPressed: () {}),
+                        CounterIcon(
+                          icon: Iconsax.shopping_bag,
+                          onPressed: () {},
+                        ),
                       ],
                     ),
                   ),

@@ -1,3 +1,4 @@
+import 'package:cashier_store/core/constants/colors.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,26 +21,23 @@ class WAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: WSizes.md),
-      child: AppBar(
-        // backgroundColor: Colors.white,
-        automaticallyImplyLeading: false,
-        leading: showBackArrow
-            ? IconButton(
-                onPressed: () => Get.back(),
-                icon: Icon(Iconsax.arrow_left),
-              )
-            : leadingIcon != null
-            ? IconButton(
-                onPressed: () => leadingOnPressed,
-                icon: Icon(leadingIcon),
-              )
-            : null,
-        title: title,
-        actionsPadding: EdgeInsets.only(right: WSizes.spaceBtwItems),
-        actions: actions,
-      ),
+    return AppBar(
+      backgroundColor: WColors.primary,
+      automaticallyImplyLeading: false,
+      leading: showBackArrow
+          ? IconButton(
+              onPressed: () => Get.back(),
+              icon: Icon(Iconsax.arrow_left),
+            )
+          : leadingIcon != null
+          ? IconButton(
+              onPressed: () => leadingOnPressed,
+              icon: Icon(leadingIcon),
+            )
+          : null,
+      title: title,
+      actionsPadding: EdgeInsets.only(right: WSizes.spaceBtwItems),
+      actions: actions,
     );
   }
 

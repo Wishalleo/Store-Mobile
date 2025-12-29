@@ -13,9 +13,9 @@ class ReportHeader extends StatelessWidget {
     return WRoundedContainer(
       backgroundColor: WColors.primary,
       gradient: LinearGradient(
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-        stops: [0.3, 1.0],
+        begin: Alignment.bottomLeft,
+        end: Alignment.topRight,
+        stops: [0.2, 1.0],
         colors: [WColors.primary, WColors.tertiary.withOpacity(0.9)],
       ),
       boxShadow: [WShadowsStyle.horizontalProductShadow],

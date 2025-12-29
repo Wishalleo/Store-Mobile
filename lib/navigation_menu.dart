@@ -1,4 +1,5 @@
 import 'package:cashier_store/core/constants/colors.dart';
+import 'package:cashier_store/features/personalization/screens/personalization_screen.dart';
 import 'package:cashier_store/features/report/screens/report_screen.dart';
 import 'package:cashier_store/features/shop/screens/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -32,8 +33,8 @@ class NavigationMenu extends StatelessWidget {
               label: 'Laporan',
             ),
             NavigationDestination(
-              icon: Icon(Iconsax.note_1),
-              label: 'Aktivitas',
+              icon: Icon(Iconsax.chart_2),
+              label: 'Analisis',
             ),
             NavigationDestination(
               icon: Icon(Iconsax.setting),
@@ -54,6 +55,6 @@ class NavigationController extends GetxController {
     HomeScreen(),
     ReportScreen(),
     Container(color: Colors.black),
-    Container(color: Colors.green),
+    PersonalizationScreen(),
   ];
 }

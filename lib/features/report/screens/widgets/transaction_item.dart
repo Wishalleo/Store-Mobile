@@ -13,6 +13,8 @@ class TransactionItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
     return InkWell(
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
       onTap: () {
         Get.to(ReportDetailScreen());
       },
@@ -46,7 +48,7 @@ class TransactionItem extends StatelessWidget {
                       Icon(Iconsax.clock, size: 12),
                       SizedBox(width: WSizes.xs),
                       Text(
-                        '14:00',
+                        '08-11-25 14:00',
                         style: Theme.of(context).textTheme.labelLarge,
                       ),
                     ],
