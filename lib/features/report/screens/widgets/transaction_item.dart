@@ -1,3 +1,4 @@
+import 'package:cashier_store/common/styles/shadows.dart';
 import 'package:cashier_store/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:cashier_store/core/constants/colors.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
@@ -22,8 +23,7 @@ class TransactionItem extends StatelessWidget {
         height: 85,
         width: double.infinity,
         backgroundColor: dark ? WColors.darkContainer : WColors.white,
-        borderColor: WColors.black.withOpacity(0.1),
-        showBorder: true,
+        boxShadow: [WShadowsStyle.horizontalProductShadow],
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           child: Row(
@@ -69,22 +69,22 @@ class TransactionItem extends StatelessWidget {
                   SizedBox(height: WSizes.cardRadiusXs),
                   Container(
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 141, 255, 137),
+                      color: WColors.success,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     child: Row(
                       children: [
                         Icon(
-                          Iconsax.money_2,
+                          Iconsax.moneys,
                           size: 12,
-                          color: const Color.fromARGB(255, 2, 63, 4),
+                          color: WColors.textWhite,
                         ),
                         SizedBox(width: WSizes.xs),
                         Text(
                           'Tunai',
                           style: Theme.of(context).textTheme.titleSmall!.apply(
-                            color: const Color.fromARGB(255, 2, 63, 4),
+                            color: WColors.textWhite,
                           ),
                         ),
                       ],

@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 
 class WShadowsStyle {
   static final verticalProductShadow = BoxShadow(
-    color: WColors.black.withOpacity(0.1),
-    blurRadius: 50,
-    spreadRadius: 7,
+    color: WColors.black.withOpacity(0.15),
+    blurRadius: 8,
+    spreadRadius: 1,
     offset: const Offset(0, 2),
   );
   static final horizontalProductShadow = BoxShadow(
-    color: WColors.darkGrey.withOpacity(0.1),
-    blurRadius: 50,
-    spreadRadius: 7,
-    offset: const Offset(0, 2),
+    color: WColors.black.withOpacity(0.1),
+    blurRadius: 10,
+    spreadRadius: 0,
+    offset: const Offset(0, 4),
   );
 }

@@ -1,11 +1,12 @@
 import 'package:cashier_store/core/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class CounterIcon extends StatelessWidget {
   const CounterIcon({super.key, required this.onPressed, required this.icon});
   final VoidCallback onPressed;
+
   final IconData icon;
+  // nanti tambahkan perkondisian cartCount untuk menampilkan cartCount
 
   @override
   Widget build(BuildContext context) {

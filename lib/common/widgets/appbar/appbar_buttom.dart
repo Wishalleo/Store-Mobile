@@ -4,20 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class WAppbar extends StatelessWidget implements PreferredSizeWidget {
-  const WAppbar({
+class WAppbarBottom extends StatelessWidget implements PreferredSizeWidget {
+  const WAppbarBottom({
     super.key,
     this.title,
     this.showBackArrow = false,
     this.leadingIcon,
     this.actions,
     this.leadingOnPressed,
+    this.bottom,
   });
   final Widget? title;
   final bool showBackArrow;
   final IconData? leadingIcon;
   final List<Widget>? actions;
   final VoidCallback? leadingOnPressed;
+  final PreferredSizeWidget? bottom;
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +44,12 @@ class WAppbar extends StatelessWidget implements PreferredSizeWidget {
       ).textTheme.headlineSmall!.apply(color: WColors.textWhite),
       actionsPadding: EdgeInsets.only(right: WSizes.spaceBtwItems),
       actions: actions,
+
+      bottom: bottom,
     );
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize =>
+      Size.fromHeight(kToolbarHeight + (bottom?.preferredSize.height ?? 0.0));
 }

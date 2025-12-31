@@ -1,10 +1,10 @@
 import 'package:cashier_store/common/widgets/custom_shapes/container/primary_header_container.dart';
-import 'package:cashier_store/common/widgets/custom_shapes/container/rounded_container.dart';
-import 'package:cashier_store/common/widgets/products/menu_icon/menu_counter_icon.dart';
 import 'package:cashier_store/core/constants/colors.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
+import 'package:cashier_store/features/personalization/screens/items/management/management_screen.dart';
 import 'package:cashier_store/features/personalization/screens/widgets/personalization_item.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class PersonalizationScreen extends StatelessWidget {
@@ -44,14 +44,14 @@ class PersonalizationScreen extends StatelessWidget {
           SizedBox(height: WSizes.sm),
           PersonalizationItem(
             icon: Iconsax.box,
-            title: 'Produk & Kategori',
-            label: 'Kelola produk, kategori, harga, dan stok barang',
-            onTap: () {},
+            title: 'Manajemen Toko',
+            label: 'Kelola produk, kategori dan satuan barang',
+            onTap: () => Get.to(ManagementScreen()),
           ),
           PersonalizationItem(
             icon: Iconsax.percentage_circle,
             title: 'Pajak & Diskon',
-            label: 'Atur besaran PPN, service charge, dan promo',
+            label: 'Atur besaran PPN dan promo',
             onTap: () {},
           ),
           PersonalizationItem(

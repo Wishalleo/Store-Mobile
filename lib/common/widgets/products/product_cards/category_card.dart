@@ -3,9 +3,12 @@ import 'package:cashier_store/core/assets/assets.gen.dart';
 import 'package:cashier_store/core/constants/colors.dart';
 import 'package:cashier_store/core/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class CategoryCard extends StatelessWidget {
-  const CategoryCard({super.key});
+  const CategoryCard({super.key, required this.label, this.showImage = true});
+  final String label;
+  final bool showImage;
 
   @override
   Widget build(BuildContext context) {
@@ -24,40 +27,45 @@ class CategoryCard extends StatelessWidget {
                   fontWeight: FontWeight.w900,
                 ),
               ),
-              Text(
-                'Lihat Semua >',
-                style: Theme.of(
-                  context,
-                ).textTheme.titleMedium!.apply(color: WColors.info),
+              Row(
+                children: [
+                  Text(
+                    label,
+                    style: Theme.of(
+                      context,
+                    ).textTheme.titleMedium!.apply(color: WColors.info),
+                  ),
+                  Icon(Iconsax.arrow_right_3, size: 16, color: WColors.info),
+                ],
               ),
             ],
           ),
           Text('481 Produk', style: Theme.of(context).textTheme.labelSmall),
           SizedBox(height: WSizes.sm),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                padding: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: WColors.white,
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                    width: 1,
-                    color: WColors.black.withOpacity(0.1),
+          if (showImage == true)
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: WColors.white,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      width: 1,
+                      color: WColors.black.withOpacity(0.1),
+                    ),
+                  ),
+                  child: WRoundedContainer(
+                    width: sizeImage,
+                    height: sizeImage,
+                    backgroundColor: WColors.lightContainer,
+                    radius: 8,
+                    child: Image.asset(Assets.images.products.banana.path),
                   ),
                 ),
-                child: WRoundedContainer(
-                  width: sizeImage,
-                  height: sizeImage,
-                  backgroundColor: WColors.lightContainer,
-                  radius: 8,
-                  child: Image.asset(Assets.images.products.banana.path),
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: WSizes.sm),
+              ],
+            ),
           Divider(color: WColors.black.withOpacity(0.1)),
         ],
       ),

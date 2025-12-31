@@ -40,10 +40,10 @@ class WColors {
   static const Color borderSecondary = Color(0xFFe6e6e6);
 
   // Error and Validation Colors
-  static const Color error = Color(0xFFd32f2f);
-  static const Color success = Color(0xFF388e3c);
-  static const Color warning = Color(0xFFf57c00);
-  static const Color info = Color(0xFF1976d2);
+  static const Color error = Color(0xFFFF4C51);
+  static const Color success = Color(0xFF328E6E);
+  static const Color warning = Color(0xFFFFAB00);
+  static const Color info = Color(0xFF2F80ED);
 
   // Neutral Shades
   static const Color black = Color(0xFF232323);
